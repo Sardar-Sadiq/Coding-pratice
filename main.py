@@ -30,11 +30,24 @@
 # I/P: 5
 # O/P: 120
 # ----CODE----
-def factorial(X):
-    fact =1
-    for i in range(2, X+1):
-        fact *= i
-    return fact
+# def factorial(X):
+#     fact =1
+#     for i in range(2, X+1):
+#         fact *= i
+#     return fact
 
-X= int(input("enter a number:"))
-print("Factorial of", X, "is:", factorial(X))
+# X= int(input("enter a number:"))
+# print("Factorial of", X, "is:", factorial(X))
+
+
+# Count frequency
+# I/P: arr[] = {10,5,10,15,10,5};
+# O/P:  10 3
+#        5 2
+#       15 1
+# ----CODE----
+from collections import Counter
+arr = [1,2,1,5,4,2,2,1,4,5]
+frequency = Counter(arr)
+for key, value in frequency.items():
+    print(f"{key} -> {value}")
