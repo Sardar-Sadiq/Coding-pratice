@@ -72,3 +72,20 @@
 
 
 # Sorting Algorithms
+# -bubble sort
+# -insertion sort
+# -selection sort **(interview)
+# -quick sort **(interview)
+# -merge sort
+
+# swap two numbers without using third variable
+# I/P: a=5, b=10
+# O/P: a=10, b=5
+# ----CODE----
+a =int(input("enter the number a: "))
+b =int(input("enter the number b: "))
+
+a= a+b
+b= a-b
+a= a-b
+print(f"after swapping: a={a}, b={b}")
