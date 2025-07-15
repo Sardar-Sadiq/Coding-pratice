@@ -160,4 +160,13 @@
 # arr = [1,2,3,4,5]
 # print("Sum:", array_sum(arr))
 
+# rotate array by K elements-block swap algorithm (left rotation)
+# ----Code----
+def left_rotate(arr, k):
+    n =len(arr)
+    k %=n
+    return arr[k:]+ arr[:k]
 
+arr = [1,2,3,4,5]
+k =2
+print("rotated", left_rotate(arr, k))
