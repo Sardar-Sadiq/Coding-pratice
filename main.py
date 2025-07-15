@@ -162,11 +162,20 @@
 
 # rotate array by K elements-block swap algorithm (left rotation)
 # ----Code----
-def left_rotate(arr, k):
-    n =len(arr)
-    k %=n
-    return arr[k:]+ arr[:k]
+# def left_rotate(arr, k):
+#     n =len(arr)
+#     k %=n
+#     return arr[k:]+ arr[:k]
 
-arr = [1,2,3,4,5]
-k =2
-print("rotated", left_rotate(arr, k))
+# arr = [1,2,3,4,5]
+# k =2
+# print("rotated", left_rotate(arr, k))
+
+
+# avg of all elements in array 
+# ----Code----
+def average(arr):
+    return sum(arr) / len(arr) if arr else 0
+
+arr = [2, 4, 6, 8]
+print("Average:", average(arr))
