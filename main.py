@@ -57,15 +57,18 @@
 # I/P: 1996
 # O/P: TRUE
 # ----CODE----
-def leap_year(N):
-    year = N
-    if(year%400 == 0):
-        return True
-    elif(year%100 == 0):
-        return False
-    elif(year%4 == 0):
-        return True
-    else:
-        return False
-N=int(input("enter the year: "))
-print(f"The {N} year is", leap_year(N))
+# def leap_year(N):
+#     year = N
+#     if(year%400 == 0):
+#         return True
+#     elif(year%100 == 0):
+#         return False
+#     elif(year%4 == 0):
+#         return True
+#     else:
+#         return False
+# N=int(input("enter the year: "))
+# print(f"The {N} year is {leap_year(N)} leap year")
+
+
+# Sorting Algorithms
