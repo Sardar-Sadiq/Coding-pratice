@@ -112,10 +112,20 @@
 # O/P: 20    
 # Sn = n*(2*a+(n-1)*d)/2)
 
-def sum_of_ap(a,d,n):
-    return (n*(2*a+(n-1)*d)/2)
+# def sum_of_ap(a,d,n):
+#     return (n*(2*a+(n-1)*d)/2)
 
-a= int(input("enter first term a:"))
-d= int(input("enter second term d: "))
-n= int(input("enter no of terms n: "))
-print(f"sum of the AP: ",sum_of_ap(a,d,n))
+# a= int(input("enter first term a:"))
+# d= int(input("enter second term d: "))
+# n= int(input("enter no of terms n: "))
+# print(f"sum of the AP: ",sum_of_ap(a,d,n))
+
+
+# second smallest and second largest element in an array 
+def second_smallest_largest(arr):
+    e = list(set(arr))
+    e.sort()
+    return e[1], e[-2] if len(e) >= 2 else (None, None)
+
+arr = [3, 1, 7, 5, 9, 1]
+print("Second Smallest & Largest:", second_smallest_largest(arr))
