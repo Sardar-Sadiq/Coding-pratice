@@ -144,10 +144,20 @@
 
 # Rearrange array in increasing-decreasing order
 # ----Code----
-def rearrange(arr):
-    arr.sort()
-    mid =len(arr) // 2
-    return arr[:mid] + arr[mid:][::-1]
+# def rearrange(arr):
+#     arr.sort()
+#     mid =len(arr) // 2
+#     return arr[:mid] + arr[mid:][::-1]
 
-arr = [5,2,8,1,3]
-print("rearrange: ", rearrange(arr))
+# arr = [5,2,8,1,3]
+# print("rearrange: ", rearrange(arr))
+
+# sum of the elements in array
+# ----Code----
+# def array_sum(arr):
+#     return sum(arr)
+
+# arr = [1,2,3,4,5]
+# print("Sum:", array_sum(arr))
+
+
