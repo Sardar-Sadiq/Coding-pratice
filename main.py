@@ -111,7 +111,7 @@
 # d=2
 # O/P: 20    
 # Sn = n*(2*a+(n-1)*d)/2)
-
+# ----Code----
 # def sum_of_ap(a,d,n):
 #     return (n*(2*a+(n-1)*d)/2)
 
@@ -122,6 +122,7 @@
 
 
 # second smallest and second largest element in an array 
+# ----Code----
 # def second_smallest_largest(arr):
 #     e = list(set(arr))
 #     e.sort()
@@ -132,10 +133,21 @@
 
 
 # reverse an given array
-def reverse_array(arr):
-    return arr[::-1]
+# ----Code----
+# def reverse_array(arr):
+#     return arr[::-1]
 
-arr= [1,2,3,4]
-print(f"reversed array: ", reverse_array(arr))
+# arr= [1,2,3,4]
+# print(f"reversed array: ", reverse_array(arr))
 # O/P: [4,3,2,1]
 
+
+# Rearrange array in increasing-decreasing order
+# ----Code----
+def rearrange(arr):
+    arr.sort()
+    mid =len(arr) // 2
+    return arr[:mid] + arr[mid:][::-1]
+
+arr = [5,2,8,1,3]
+print("rearrange: ", rearrange(arr))
