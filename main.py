@@ -95,13 +95,27 @@
 # I/P: arr = {2,3,6,7,8,9}
 # O/P: 9 2
 # ----CODE----
-def largest_num (N):
-        minimum = min(N)
-        maximum = max(N)
-        return minimum, maximum
+# def largest_num (N):
+#         minimum = min(N)
+#         maximum = max(N)
+#         return minimum, maximum
 
-N= {2,3,4,5,7,8,9}
-minimum_value, maximum = largest_num(N)
-print(f"minimum value: {minimum_value}, maximum value: {maximum}")
+# N= {2,3,4,5,7,8,9}
+# minimum_value, maximum = largest_num(N)
+# print(f"minimum value: {minimum_value}, maximum value: {maximum}")
     
-    
+# Given an AP Series, we need to find the sum of the series.
+# I/P: 
+# n=4
+# a=2
+# d=2
+# O/P: 20    
+# Sn = n*(2*a+(n-1)*d)/2)
+
+def sum_of_ap(a,d,n):
+    return (n*(2*a+(n-1)*d)/2)
+
+a= int(input("enter first term a:"))
+d= int(input("enter second term d: "))
+n= int(input("enter no of terms n: "))
+print(f"sum of the AP: ",sum_of_ap(a,d,n))
