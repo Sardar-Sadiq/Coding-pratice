@@ -174,8 +174,20 @@
 
 # avg of all elements in array 
 # ----Code----
-def average(arr):
-    return sum(arr) / len(arr) if arr else 0
+# def average(arr):
+#     return sum(arr) / len(arr) if arr else 0
 
-arr = [2, 4, 6, 8]
-print("Average:", average(arr))
+# arr = [2, 4, 6, 8]
+# print("Average:", average(arr))
+
+
+# finding the median
+# ----Code----
+def median(arr):
+    arr.sort()
+    n = len(arr)
+    mid = n // 2
+    return (arr[mid] + arr[mid - 1]) / 2 if n % 2 == 0 else arr[mid]
+
+arr = [5, 3, 1, 2, 4]
+print("Median:", median(arr))
