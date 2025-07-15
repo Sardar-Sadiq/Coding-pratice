@@ -82,10 +82,26 @@
 # I/P: a=5, b=10
 # O/P: a=10, b=5
 # ----CODE----
-a =int(input("enter the number a: "))
-b =int(input("enter the number b: "))
+# a =int(input("enter the number a: "))
+# b =int(input("enter the number b: "))
 
-a= a+b
-b= a-b
-a= a-b
-print(f"after swapping: a={a}, b={b}")
+# a= a+b
+# b= a-b
+# a= a-b
+# or use this a = a+b-(b=a)
+# print(f"after swapping: a={a}, b={b}")
+
+# Largest an smallest elelmebts in an array
+# I/P: arr = {2,3,6,7,8,9}
+# O/P: 9 2
+# ----CODE----
+def largest_num (N):
+        minimum = min(N)
+        maximum = max(N)
+        return minimum, maximum
+
+N= {2,3,4,5,7,8,9}
+minimum_value, maximum = largest_num(N)
+print(f"minimum value: {minimum_value}, maximum value: {maximum}")
+    
+    
