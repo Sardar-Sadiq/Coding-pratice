@@ -122,10 +122,20 @@
 
 
 # second smallest and second largest element in an array 
-def second_smallest_largest(arr):
-    e = list(set(arr))
-    e.sort()
-    return e[1], e[-2] if len(e) >= 2 else (None, None)
+# def second_smallest_largest(arr):
+#     e = list(set(arr))
+#     e.sort()
+#     return e[1], e[-2] if len(e) >= 2 else (None, None)
 
-arr = [3, 1, 7, 5, 9, 1]
-print("Second Smallest & Largest:", second_smallest_largest(arr))
+# arr = [3, 1, 7, 5, 9, 1]
+# print("Second Smallest & Largest:", second_smallest_largest(arr))
+
+
+# reverse an given array
+def reverse_array(arr):
+    return arr[::-1]
+
+arr= [1,2,3,4]
+print(f"reversed array: ", reverse_array(arr))
+# O/P: [4,3,2,1]
+
