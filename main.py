@@ -281,22 +281,46 @@
 # arr = list(map(int,input().split()))
 # print(bubblesort(arr))
 
-def binarysearch( arr, X):
-    low = 0
-    high = len(arr)
+# Binary search
+# ----Code----
+# def binarysearch( arr, X):
+#     low = 0
+#     high = len(arr)
     
-    while low <= high:
-        mid = (low + high) // 2
-        if arr[mid] == X:
-            return mid
-        elif arr[mid] < X:
-            low = mid + 1
-        else:
-            high = mid -1 
-    return -1
+#     while low <= high:
+#         mid = (low + high) // 2
+#         if arr[mid] == X:
+#             return mid
+#         elif arr[mid] < X:
+#             low = mid + 1
+#         else:
+#             high = mid -1 
+#     return -1
+
+# arr = list(map(int,input().split()))
+# arr.sort()
+# X = int(input())
+
+# print(binarysearch(arr, X))
+
+# Recursive binary search
+# ----Code----
+def recursivesearch(arr, X ,low, high):
+    if low > high:
+        return -1
+    
+    mid = ( low + high)//2
+    if arr[mid] == X:
+        return mid
+    elif arr[mid] < X:
+        return(recursivesearch(arr, X, mid+1, high))
+    else:
+        return(recursivesearch(arr, X, low, mid-1))
+        
 
 arr = list(map(int,input().split()))
 arr.sort()
-X = int(input())
+X =int(input())
 
-print(binarysearch(arr, X))
+print(recursivesearch(arr, X, 0, len(arr)))
+        
