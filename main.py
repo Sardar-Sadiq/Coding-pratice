@@ -183,11 +183,31 @@
 
 # finding the median
 # ----Code----
-def median(arr):
-    arr.sort()
-    n = len(arr)
-    mid = n // 2
-    return (arr[mid] + arr[mid - 1]) / 2 if n % 2 == 0 else arr[mid]
+# def median(arr):
+#     arr.sort()
+#     n = len(arr)
+#     mid = n // 2
+#     return (arr[mid] + arr[mid - 1]) / 2 if n % 2 == 0 else arr[mid]
 
-arr = [5, 3, 1, 2, 4]
-print("Median:", median(arr))
+# arr = [5, 3, 1, 2, 4]
+# print("Median:", median(arr))
+
+
+
+# odd and even positions difference
+# I/P: 4567
+# O/P: 2
+# ----Code---- 
+def oddlyeven(n):
+    oddsum= 0
+    evensum= 0
+    for i in range(len(n)):
+        digit = int(n[i])
+        if(i+1)%2 == 1 :
+            oddsum += digit
+        else:
+            evensum += digit
+    return abs(oddsum - evensum)
+
+num = input(" ")
+print(oddlyeven(num))
