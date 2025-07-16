@@ -280,3 +280,23 @@
 
 # arr = list(map(int,input().split()))
 # print(bubblesort(arr))
+
+def binarysearch( arr, X):
+    low = 0
+    high = len(arr)
+    
+    while low <= high:
+        mid = (low + high) // 2
+        if arr[mid] == X:
+            return mid
+        elif arr[mid] < X:
+            low = mid + 1
+        else:
+            high = mid -1 
+    return -1
+
+arr = list(map(int,input().split()))
+arr.sort()
+X = int(input())
+
+print(binarysearch(arr, X))
