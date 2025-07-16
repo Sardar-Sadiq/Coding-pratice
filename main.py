@@ -248,8 +248,20 @@
 # I/P: 1a
 # O/P: 27
 # ----Code----
-def base17_to_decimal(num):
-    return int(num, 17)
+# def base17_to_decimal(num):
+#     return int(num, 17)
 
-num = input("Enter base-17 number: ").upper()
-print("Decimal:", base17_to_decimal(num))
+# num = input("Enter base-17 number: ").upper()
+# print("Decimal:", base17_to_decimal(num))
+
+# second largest number
+# I/P: 456 456 882 600
+# O/P: 600
+# ----Code----
+def sec(arr):
+    arr = list(set(arr))
+    arr.sort()
+    return arr[-2]
+
+arr = list(map(int,input().split()))
+print(sec(arr))
