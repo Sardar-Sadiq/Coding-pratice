@@ -236,10 +236,20 @@
 
 # missing number from array 1 to n
 # ----Code----
-def missing(arr ,n):
-    total = n * (n+1) // 2
-    return total - sum(arr)
+# def missing(arr ,n):
+#     total = n * (n+1) // 2
+#     return total - sum(arr)
 
-n = int(input())
-arr = list(map(int,input().split()))
-print(missing(arr, n))
+# n = int(input())
+# arr = list(map(int,input().split()))
+# print(missing(arr, n))
+
+# sweet seventeen
+# I/P: 1a
+# O/P: 27
+# ----Code----
+def base17_to_decimal(num):
+    return int(num, 17)
+
+num = input("Enter base-17 number: ").upper()
+print("Decimal:", base17_to_decimal(num))
