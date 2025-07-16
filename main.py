@@ -258,10 +258,26 @@
 # I/P: 456 456 882 600
 # O/P: 600
 # ----Code----
-def sec(arr):
-    arr = list(set(arr))
-    arr.sort()
-    return arr[-2]
+# def sec(arr):
+#     arr = list(set(arr))
+#     arr.sort()
+#     return arr[-2]
+
+# arr = list(map(int,input().split()))
+# print(sec(arr))
+
+# bubble sort
+# I/P: 5 1 4 2 3
+# O/P: 1 2 3 4 5
+# ----Code----
+
+def bubblesort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+    return arr
 
 arr = list(map(int,input().split()))
-print(sec(arr))
+print(bubblesort(arr))
