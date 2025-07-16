@@ -226,10 +226,20 @@
 
 # palindrome string/ number
 # ----Code----
-def palindrome(s):
-    rev = s[::-1]
-    print (rev)
-    return s == rev
+# def palindrome(s):
+#     rev = s[::-1]
+#     print (rev)
+#     return s == rev
 
-s = input()
-print(palindrome(s))
+# s = input()
+# print(palindrome(s))
+
+# missing number from array 1 to n
+# ----Code----
+def missing(arr ,n):
+    total = n * (n+1) // 2
+    return total - sum(arr)
+
+n = int(input())
+arr = list(map(int,input().split()))
+print(missing(arr, n))
