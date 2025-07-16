@@ -305,22 +305,22 @@
 
 # Recursive binary search
 # ----Code----
-def recursivesearch(arr, X ,low, high):
-    if low > high:
-        return -1
+# def recursivesearch(arr, X ,low, high):
+#     if low > high:
+#         return -1
     
-    mid = ( low + high)//2
-    if arr[mid] == X:
-        return mid
-    elif arr[mid] < X:
-        return(recursivesearch(arr, X, mid+1, high))
-    else:
-        return(recursivesearch(arr, X, low, mid-1))
+#     mid = ( low + high)//2
+#     if arr[mid] == X:
+#         return mid
+#     elif arr[mid] < X:
+#         return(recursivesearch(arr, X, mid+1, high))
+#     else:
+#         return(recursivesearch(arr, X, low, mid-1))
         
 
-arr = list(map(int,input().split()))
-arr.sort()
-X =int(input())
+# arr = list(map(int,input().split()))
+# arr.sort()
+# X =int(input())
 
-print(recursivesearch(arr, X, 0, len(arr)))
+# print(recursivesearch(arr, X, 0, len(arr)))
         
