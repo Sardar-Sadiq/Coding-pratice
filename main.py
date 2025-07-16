@@ -214,12 +214,22 @@
 
 # product of digits
 # ----Code----
-def product_of_digits(n):
-    prod = 1
-    while n > 0:
-        prod *= n % 10
-        n = n // 10
-    return prod
+# def product_of_digits(n):
+#     prod = 1
+#     while n > 0:
+#         prod *= n % 10
+#         n = n // 10
+#     return prod
 
-n = int(input())
-print(product_of_digits(n))
+# n = int(input())
+# print(product_of_digits(n))
+
+# palindrome string/ number
+# ----Code----
+def palindrome(s):
+    rev = s[::-1]
+    print (rev)
+    return s == rev
+
+s = input()
+print(palindrome(s))
