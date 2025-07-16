@@ -257,7 +257,7 @@
 # second largest number
 # I/P: 456 456 882 600
 # O/P: 600
-# ----Code----
+# ----Code-----
 def sec(arr):
     arr = list(set(arr))
     arr.sort()
