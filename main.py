@@ -323,4 +323,11 @@
 # X =int(input())
 
 # print(recursivesearch(arr, X, 0, len(arr)))
-        
+
+# pratice of tcs wiht chatgpt
+# sweet seventeen        
+def seventeen(num):
+    return int(num, 17)
+
+num = (input())
+print(seventeen(num))
