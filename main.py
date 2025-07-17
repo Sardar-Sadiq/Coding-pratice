@@ -326,8 +326,32 @@
 
 # pratice of tcs wiht chatgpt
 # sweet seventeen        
-def seventeen(num):
-    return int(num, 17)
+# def seventeen(num):
+#     return int(num, 17)
 
-num = (input())
-print(seventeen(num))
+# num = (input())
+# print(seventeen(num))
+
+# A sober walk
+def finaldirec ( n):
+    x, y = 0,0
+    directions = ['R', 'U', 'L', 'D']
+    for i in (1, n+1):
+        dir = directions[(i-1) % 4]
+        distance = i * 10
+        if dir == 'R':
+            x += distance
+        elif dir == 'U':
+            y += distance
+        elif dir == 'L':
+            x -= distance
+        elif dir == 'D':
+            y -= distance
+    return x,y
+
+n = int(input())
+x, y = finaldirec(n)
+print(f"{x} {y}")
+# I/P: 5
+# O/P: 10 60
+        
