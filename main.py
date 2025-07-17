@@ -357,15 +357,34 @@
 
 
 # word is the key
-def check(str):
-    if str == str[::-1]:
-        print("yes")
+# def check(str):
+#     if str == str[::-1]:
+#         print("yes")
         
-    else: 
-        print("No")
+#     else: 
+#         print("No")
         
-str = input()
+# str = input()
 
-check(str)
+# check(str)
 # I/P: WOW
 # O/P: YES
+
+# factorial
+# def factorial(n):
+#     if n==0 or n==1:
+#         return 1
+#     return n * factorial(n-1)
+
+# n= int(input())
+# print(factorial(n))
+
+def fib(n):
+    if n ==0:
+        return 0 
+    elif n ==1:
+        return 1
+    return fib(n-1) + fib(n-2)
+
+n = int(input())
+print(fib(n))
