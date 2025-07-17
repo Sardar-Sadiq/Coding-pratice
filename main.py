@@ -333,25 +333,39 @@
 # print(seventeen(num))
 
 # A sober walk
-def finaldirec ( n):
-    x, y = 0,0
-    directions = ['R', 'U', 'L', 'D']
-    for i in (1, n+1):
-        dir = directions[(i-1) % 4]
-        distance = i * 10
-        if dir == 'R':
-            x += distance
-        elif dir == 'U':
-            y += distance
-        elif dir == 'L':
-            x -= distance
-        elif dir == 'D':
-            y -= distance
-    return x,y
+# def finaldirec ( n):
+#     x, y = 0,0
+#     directions = ['R', 'U', 'L', 'D']
+#     for i in (1, n+1):
+#         dir = directions[(i-1) % 4]
+#         distance = i * 10
+#         if dir == 'R':
+#             x += distance
+#         elif dir == 'U':
+#             y += distance
+#         elif dir == 'L':
+#             x -= distance
+#         elif dir == 'D':
+#             y -= distance
+#     return x,y
 
-n = int(input())
-x, y = finaldirec(n)
-print(f"{x} {y}")
+# n = int(input())
+# x, y = finaldirec(n)
+# print(f"{x} {y}")
 # I/P: 5
 # O/P: 10 60
+
+
+# word is the key
+def check(str):
+    if str == str[::-1]:
+        print("yes")
         
+    else: 
+        print("No")
+        
+str = input()
+
+check(str)
+# I/P: WOW
+# O/P: YES
