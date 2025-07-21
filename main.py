@@ -389,5 +389,5 @@
 # n = int(input())
 # print(fib(n))
 
-def secertcode (x,y):
+# def secertcode (x,y):
     
