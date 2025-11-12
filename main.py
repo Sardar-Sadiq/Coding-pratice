@@ -1,5 +1,5 @@
 #TCS practing
-
+#python <fileName>.py
 # give a no of N find out the sum of the first N natural numbers
 # i/p: N =5
 # O/P : 15
