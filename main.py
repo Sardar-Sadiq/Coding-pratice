@@ -5,9 +5,9 @@
 # O/P : 15
 # explanation: 1+2+3+4+5
 # -----CODE-----
-# N= int(input("enter a number:"))
-# sum = N*(N+1)//2
-# print(f"sum of {N} natural number is: {sum}")
+# n = int(input("enter a number: "))
+# N = n*(n+1)//2
+# print("sum of",n ,"numbers is: ", N)
 
 # Palindrome check
 # I/P: N =121
