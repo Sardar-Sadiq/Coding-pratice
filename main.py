@@ -28,15 +28,15 @@
 # reversed integer
 # ------ code -----
 
-def reversed(N):
-    rev_num = 0
-    while N>0:
-        digit = N%10
-        rev_num = rev_num*10+digit
-        N//=10
-    print (rev_num)
-N = int(input())
-reversed(N)
+# def reversed(N):
+#     rev_num = 0
+#     while N>0:
+#         digit = N%10
+#         rev_num = rev_num*10+digit
+#         N//=10
+#     print (rev_num)
+# N = int(input())
+# reversed(N)
 # For the reversing just remove the OG from the code and return only rev_num for optional add the print("reversed number:", rev_num ) like that it will show you the reversed integer
 
 # Factorial
@@ -60,10 +60,12 @@ reversed(N)
 #       15 1
 # ----CODE----
 # from collections import Counter
-# arr = [1,2,1,5,4,2,2,1,4,5]
-# frequency = Counter(arr)
-# for key, value in frequency.items():
-#     print(f"{key} -> {value}")
+# arr =[1,2,3,4,3,2,4,1,5]
+# freq = Counter(arr)
+# for key, value in  freq.items():
+#     print(f"{key}->{value}")
+
+# print(freq[3])
 
 
 # Leap year check
@@ -98,11 +100,19 @@ reversed(N)
 # a =int(input("enter the number a: "))
 # b =int(input("enter the number b: "))
 
-# a= a+b
-# b= a-b
+# a=10
+# b=20
+# a=a+b
+# b=a-b
 # a= a-b
-# or use this a = a+b-(b=a)
-# print(f"after swapping: a={a}, b={b}")
+# print(a)
+# print(b)
+# a=2
+# b=3
+# temp=a
+# a=b
+# b=temp
+# print(a,b)
 
 # Largest an smallest elelmebts in an array
 # I/P: arr = {2,3,6,7,8,9}
@@ -136,13 +146,16 @@ reversed(N)
 
 # second smallest and second largest element in an array 
 # ----Code----
-# def second_smallest_largest(arr):
+# def sec_lar(arr):
 #     e = list(set(arr))
 #     e.sort()
-#     return e[1], e[-2] if len(e) >= 2 else (None, None)
 
-# arr = [3, 1, 7, 5, 9, 1]
-# print("Second Smallest & Largest:", second_smallest_largest(arr))
+#     return e[1], e[-2]
+
+# arr = [12,50,40,100,88,66,75]
+# arr.sort()
+# print(arr)
+# print("2nd smallest and largest",sec_lar(arr))
 
 
 # reverse an given array
@@ -157,13 +170,13 @@ reversed(N)
 
 # Rearrange array in increasing-decreasing order
 # ----Code----
-# def rearrange(arr):
+# def reaar (arr):
 #     arr.sort()
-#     mid =len(arr) // 2
-#     return arr[:mid] + arr[mid:][::-1]
-
+#     mid = len(arr)//2
+#     return arr[:mid]+arr[mid:][::-1]
 # arr = [5,2,8,1,3]
-# print("rearrange: ", rearrange(arr))
+# print("rearrange: ", reaar(arr))
+
 
 # sum of the elements in array
 # ----Code----
@@ -175,10 +188,10 @@ reversed(N)
 
 # rotate array by K elements-block swap algorithm (left rotation)
 # ----Code----
-# def left_rotate(arr, k):
-#     n =len(arr)
+# def left_rotate(arr,k):
+#     n = len(arr)
 #     k %=n
-#     return arr[k:]+ arr[:k]
+#     return arr[k:]+arr[:k]
 
 # arr = [1,2,3,4,5]
 # k =2
@@ -196,14 +209,14 @@ reversed(N)
 
 # finding the median
 # ----Code----
-# def median(arr):
-#     arr.sort()
-#     n = len(arr)
-#     mid = n // 2
-#     return (arr[mid] + arr[mid - 1]) / 2 if n % 2 == 0 else arr[mid]
+def median(arr):
+    arr.sort()
+    n = len(arr)
+    mid = n // 2
+    return (arr[mid] + arr[mid - 1]) / 2 if n % 2 == 0 else arr[mid]
 
-# arr = [5, 3, 1, 2, 4]
-# print("Median:", median(arr))
+arr = [5, 3, 1, 2, 4]
+print("Median:", median(arr))
 
 
 
