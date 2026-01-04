@@ -17,13 +17,26 @@
 #     OG, rev_num = N,0
 #     while N>0:
 #         digit = N%10
-#         rev_num = rev_num*10+ digit
+#         rev_num = rev_num*10+digit
 #         N //= 10
+
 #     return OG == rev_num
 
 # N= int(input("enter a number:"))
 # print("is palindrome:", is_palindrome(N) )
 
+# reversed integer
+# ------ code -----
+
+def reversed(N):
+    rev_num = 0
+    while N>0:
+        digit = N%10
+        rev_num = rev_num*10+digit
+        N//=10
+    print (rev_num)
+N = int(input())
+reversed(N)
 # For the reversing just remove the OG from the code and return only rev_num for optional add the print("reversed number:", rev_num ) like that it will show you the reversed integer
 
 # Factorial
@@ -31,9 +44,9 @@
 # O/P: 120
 # ----CODE----
 # def factorial(X):
-#     fact =1
+#     fact = 1
 #     for i in range(2, X+1):
-#         fact *= i
+#         fact *=i
 #     return fact
 
 # X= int(input("enter a number:"))
