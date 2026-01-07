@@ -15,4 +15,4 @@ completed   sum of n numbers
             sum of array
             left rotate
             avg of all elements
-            "daily commit"
+            median

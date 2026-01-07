@@ -212,10 +212,9 @@
 def median(arr):
     arr.sort()
     n = len(arr)
-    mid = n // 2
-    return (arr[mid] + arr[mid - 1]) / 2 if n % 2 == 0 else arr[mid]
-
-arr = [5, 3, 1, 2, 4]
+    mid = n //2
+    return (arr[mid] + arr[mid-1])/2 if n%2 ==0 else arr[mid]
+arr = [5, 3, 1, 2, 4, 6]
 print("Median:", median(arr))
 
 
