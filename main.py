@@ -223,19 +223,19 @@
 # I/P: 4567
 # O/P: 2
 # ----Code---- 
-def oddlyeven(n):
-    oddsum= 0
-    evensum= 0
-    for i in range(len(n)):
-        digit = int(n[i])
-        if(i+1)%2 == 1 :
-            oddsum += digit
-        else:
-            evensum += digit
-    return abs(oddsum - evensum)
+# def oddlyeven(n):
+#     oddsum= 0
+#     evensum= 0
+#     for i in range(len(n)):
+#         digit = int(n[i])
+#         if(i+1)%2 == 1 :
+#             oddsum += digit
+#         else:
+#             evensum += digit
+#     return abs(oddsum - evensum)
 
-num = input(" ")
-print(oddlyeven(num))
+# num = input(" ")
+# print(oddlyeven(num))
 
 
 # product of digits

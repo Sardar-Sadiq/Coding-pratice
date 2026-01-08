@@ -16,3 +16,4 @@ completed   sum of n numbers
             left rotate
             avg of all elements
             median
+            completed remaining coding questions 
