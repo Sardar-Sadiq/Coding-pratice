@@ -17,3 +17,15 @@ completed   sum of n numbers
             avg of all elements
             median
             completed remaining coding questions 
+
+
+new order: 
+        GeeksForGeeks questions list [Infosys coding questions](https://www.geeksforgeeks.org/dsa/infosys-sde-sheet-interview-questions-and-answers/)
+
+        completed 
+        ## EASY 
+            Check if an array is sorted
+            Count digits in Number
+            reverse a string
+            print first n fibonacci 
+            
