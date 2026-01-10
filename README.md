@@ -29,6 +29,11 @@ new order:
             reverse a string
             print first n fibonacci 
             
-day 1-2 coding questions
+day 1-2 coding questions [INFOSYS-CODE] (infosys.py)
 to Crack DSE ROLE:
         TwoSum pattern
+        missing number pattern
+        two-pointer pattern
+        unqiue character in a string
+        anagram groups
+        rpg game

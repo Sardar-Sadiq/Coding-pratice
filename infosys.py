@@ -33,7 +33,86 @@
 
 
 
+# ------- TWO-POINTER / MOVE IN PLACE SHUFFLE
+# def moveZeroes(nums):
+#     pos = 0
+#     for i in range(len(nums)):
+#         if nums[i] != 0:
+#             nums[pos], nums[i] = nums[i], nums[pos]
+#             pos += 1
+#     return nums
+
+# nums = [0,1,0,3,12]
+# print(moveZeroes(nums))
+
+# in this code we are using two pointers one to traverse the array and other to keep tracck of position to place non zero elements and we swap them when we find non zero element
 
 
 
 
+#------ unique character in a string
+
+# def fir_Uniq_Ch(s):
+#     counts = {}
+#     for char in s:
+#         counts[char] = counts.get(char,0)+1
+#     for i in range(len(s)):
+#         if counts[s[i]] ==1:
+#             return i 
+#     return -1
+
+
+# print(fir_Uniq_Ch("aabcd"))    # Returns 2 (first unique char is 'b')
+# print(fir_Uniq_Ch("infosys"))  # Returns 0 (first unique char is 'i')
+# print(fir_Uniq_Ch("aaa"))      # Returns -1 (no unique characters)
+
+
+# in this code we are using a dict to count of each character in the string and then we find the character with count 1 and return its index if no unique character found we return -1
+
+
+
+
+
+
+
+
+
+# ------- Anagram Grouping
+
+
+# from collections import defaultdict
+# def anagram(strs):
+#     groups = defaultdict(list)
+#     for s in strs:
+#         sorterd_key = "".join(sorted(s))
+#         groups[sorterd_key].append(s)
+#     return list(groups.values())
+
+# strs = ["eat", "tea", "tan", "ate", "nat", "bat", "tab"]
+# print(anagram(strs))
+
+# in this code we are using a dict to group the anagrams by using sorted strs as key and appending to OG strs to the dict values and finally returning the values of the dict as list of lists
+
+
+
+
+
+# rpg game
+
+# def max_mon(n, ini_exp,power,bonuses):
+#     monsters = sorted(zip(power, bonuses))
+#     count = 0
+#     curr_exp = ini_exp
+#     for p, b in monsters:
+#         if curr_exp >= p:
+#             curr_exp +=b
+#             count +=1
+#         else:
+#             break
+#     return count
+
+# exp = 10 
+# n =2
+# power = [20,5]
+# bonuses = [5,2]
+# print(max_mon(n,exp,power,bonuses))
