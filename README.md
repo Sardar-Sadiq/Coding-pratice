@@ -29,3 +29,6 @@ new order:
             reverse a string
             print first n fibonacci 
             
+
+to Crack DSE ROLE:
+        TwoSum pattern
