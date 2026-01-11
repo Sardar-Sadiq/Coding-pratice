@@ -116,3 +116,36 @@
 # power = [20,5]
 # bonuses = [5,2]
 # print(max_mon(n,exp,power,bonuses))
+
+
+
+# -------- Frequency Sort
+
+
+# from collections import Counter
+
+# def freq(nums):
+#     counts = Counter(nums)
+#     nums.sort(key=lambda x: (counts[x], x))
+#     return nums
+
+# nums = [4,4,1,2,2,3,3,3]
+# print(freq(nums))  
+
+# in this code we are using counter to count the frequency of each number and then sorting the nums based on frequency and then by number itself in ascending order using lambda function as key in sort method
+
+
+# --------- Equilibrium Index
+
+# def findEquil(nums):
+#     tot_sum = sum(nums)
+#     lef_sum = 0
+#     for i,x in enumerate(nums):
+#         if lef_sum == (tot_sum - lef_sum -x):
+#             return i 
+#     return -1 
+
+# nums = [1,7,3,6,5,6]
+# print(findEquil(nums))
+
+# in this code we are calculating total sum of array and then iterating through the array and checking if left sum is equal to right sum by subtracting left sum and current element from total sum if found we return index else -1

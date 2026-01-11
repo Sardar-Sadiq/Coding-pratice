@@ -37,3 +37,15 @@ to Crack DSE ROLE:
         unqiue character in a string
         anagram groups
         rpg game
+        Frequency sort
+        equillibrium index
+
+
+
+
+
+Priority,Topic,Why?
+Day 1-2,Array Manipulation,"Practice ""Easy"" problems: Two Sum, Missing Number, Move Zeroes."
+Day 3-4,String Logic,"Practice: Valid Anagram, Longest Common Prefix, Palindrome cleaning."
+Day 5-7,Basic Greedy,"Practice: Monster RPG problem, Activity Selection (Sorting by end time)."
+Day 8-10,SQL Joins & Groups,This is purely for the Jan 19th interview. Joins are 100% asked.
