@@ -1,0 +1,45 @@
+A massive collection of almost every logic-based question ever asked in the NQT, categorized by "Arrays," "Strings," and "Math."
+
+https://github.com/karthikreddy-7/TCS-NQT-CODING-SHEET?tab=readme-ov-file#previously-asked-coding-question
+
+
+for 2025 tcs questions 
+https://www.naukri.com/campus/career-guidance/tcs-aptitude-questions
+
+Contains shift-wise solved code (C++, Java, Python) from 2024 and 2025 slots.
+https://github.com/Aditya-Mishra19/TCS-NQT-2024-Coding-Solutions
+
+
+for 2023
+
+advanced sections
+https://www.scribd.com/document/728672149/TCS-NQT-Previous-Year-Papers-With-Solutions-by-Placement-Lelo-1
+
+coding
+These problems are frequently repeated or used as logic templates for new exams.
+Problem 1: Palindromic PrimeLogic: Find the next Prime number after $N$ that is also a Palindrome.
+Problem 2: Equilibrium IndexLogic: Find an index in an array such that the sum of elements at lower indices is equal to the sum of elements at higher indices.
+Problem 3: Binary TogglingLogic: Input an integer, find its binary, toggle the bits (0 to 1 and vice versa), and output the new integer.
+
+https://www.scribd.com/document/722669587/TCS-NQT-2023-coding-questions
+
+
+for 2024
+
+model Paper
+https://www.scribd.com/document/725123578/TCS-NQT-MODEL-PAPER-2024
+
+numerical 
+https://talentbattle.in/company-specific-previous-year-questions/tcs-nqt-previous-year-
+
+advanced sections
+https://www.scribd.com/presentation/946893098/TCS-NQT-Advanced-Quantitative-Aptitude-New
+
+coding
+For the 2024 slots, TCS favored "Array Transformation" and "Number Theory" problems.
+Problem: The Chocolate Factory (Most Repeated)Description: Move all zeros (empty packets) to the end of the array while keeping the relative order of non-zero elements.Complexity: Required $O(n)$ time and $O(1)$ space.
+Problem: Toggling Bits (Digital Logic)Description: Take an integer, convert it to binary, flip all bits, and return the new decimal value.
+Problem: Airport Security (Risk Severity)Description: Sort an array of $[0, 1, 2]$ representing risk levels in a single pass (Dutch National Flag algorithm).
+
+https://www.mygreatlearning.com/blog/tcs-nqt-coding-questions-answers/
+
