@@ -20,6 +20,34 @@
 #         rev_num = rev_num*10+digit
 #         N //= 10
 
+# def is_pali(n):
+#     s = str(n)
+#     return s == s[::-1]
+
+# a= str(input())
+# print(is_pali(a))
+
+# def reverse(n):
+#     num = int(n)
+#     return n == n[::-1]
+# a = input()
+# print(reverse(a))
+
+# def sorting(arr):
+#     arr.sort()
+#     return arr
+# arr = list(map(int,input()))
+# print(sorting(arr))
+
+# import math
+
+
+# def fact(n):
+#     factnum = math.factorial(n)
+#     return factnum
+
+# n= int(input())
+# print(fact(n))
 #     return OG == rev_num
 
 # N= int(input("enter a number:"))
@@ -306,6 +334,28 @@
 
 # arr = list(map(int,input().split()))
 # print(bubblesort(arr))
+
+
+# def prime(n):
+#     if n > 1:
+#         for i in range(2, int(n**0.5) + 1):
+#             if n % i == 0:
+#                 return False
+#         return True
+
+# n = int(input())
+# print(prime(n))
+
+
+# def fibonacci(n):
+#     a,b = 0,1
+#     for _ in range(n):
+#         [a,b] = [b,a+b]
+#     return a
+
+# n = int(input())
+# print(fibonacci(n))
+
 
 # Binary search
 # ----Code----
